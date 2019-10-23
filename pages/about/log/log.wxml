@@ -1,0 +1,43 @@
+<cu-custom bgColor="bg-gradual-green" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">日志</view></cu-custom>
+<view class="cu-timeline">
+  <view class="cu-item text-green">
+  <view class="bg-gradual-green content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-green">体验版1.0</view>
+        <view class="cu-tag line-white">2019/10/23</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>上传体验版</view>
+      </view>
+    </view>  
+    <view class="bg-gradual-green content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-green">beta2.0</view>
+        <view class="cu-tag line-white">2019/10/18</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>新增成员：莎</view>
+      </view>
+    </view>   
+    <view class="bg-gradual-green content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-green">beta1.0</view>
+        <view class="cu-tag line-white">2019/10/16</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>体验版本</view>
+      </view>
+    </view>
+    <view class="bg-gradual-green content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-green">beta1.0</view>
+        <view class="cu-tag line-white">2019/10/16</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>开始</view>
+      </view>
+    </view>   
+  </view>
+
+  
+</view>

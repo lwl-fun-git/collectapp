@@ -1,0 +1,118 @@
+<cu-custom bgColor="bg-gradual-green" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">功能</view>
+</cu-custom>
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+  <view class='text-center margin-bottom text-lg  text-grey'>操作跟网页一样</view>
+  <view class='text-content'>
+    <view class='margin-top-sm'>
+      <view class="page-section">
+          <view class="weui-cells__title">总额</view>
+          <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+              <input class="weui-input" type="number" bindblur='inputbind_total' value="{{collect_total}}" placeholder="请输入..." />
+            </view>
+          </view>
+        </view>
+      </view>
+    <view class='margin-top-sm'>
+      <view class="page-section">
+          <view class="weui-cells__title">点</view>
+          <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+              <input class="weui-input" type="number" bindblur='inputbind_dian' placeholder="请输入..." value="{{arr.dian}}" />
+            </view>
+          </view>
+        </view>
+      </view>
+    <view class='margin-top-sm'>
+      <view class="page-section">
+          <view class="weui-cells__title">我</view>
+          <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+              <input class="weui-input" type="number" bindblur='inputbind_wo' placeholder="请输入..." value="{{arr.wo}}" />
+            </view>
+          </view>
+        </view>
+    </view>
+    <view class='margin-top-sm'>
+      <view class="page-section">
+          <view class="weui-cells__title">维</view>
+          <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+              <input class="weui-input" type="number" bindblur='inputbind_wei' placeholder="请输入..."  value="{{arr.wei}}" />
+            </view>
+          </view>
+        </view>
+    </view>
+    <view class='margin-top-sm'>
+      <view class="page-section">
+          <view class="weui-cells__title">曦</view>
+          <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+              <input class="weui-input" type="number" bindblur='inputbind_xi' placeholder="请输入..."  value="{{arr.xi}}" />
+            </view>
+          </view>
+        </view>
+    </view>
+    <view class='margin-top-sm'>
+      <view class="page-section">
+          <view class="weui-cells__title">叶</view>
+          <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+              <input class="weui-input" type="number" bindblur='inputbind_ye' placeholder="请输入..." value="{{arr.ye}}" />
+            </view>
+          </view>
+        </view>
+    </view>
+    <view class='margin-top-sm'>
+      <view class="page-section">
+          <view class="weui-cells__title">琪</view>
+          <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+              <input class="weui-input" type="number" bindblur='inputbind_qi' placeholder="请输入..." value="{{arr.qi}}" />
+            </view>
+          </view>
+        </view>
+    </view>
+    <view class='margin-top-sm'>
+      <view class="page-section">
+          <view class="weui-cells__title">图</view>
+          <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+              <input class="weui-input" type="number" bindblur='inputbind_tu' placeholder="请输入..." value="{{arr.tu}}" />
+            </view>
+          </view>
+        </view>
+    </view>
+    <view class='margin-top-sm'>
+      <view class="page-section">
+          <view class="weui-cells__title">莎</view>
+          <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+              <input class="weui-input" type="number" bindblur='inputbind_sha' placeholder="请输入..." value="{{arr.tu}}" />
+            </view>
+          </view>
+        </view>
+    </view>
+    <view class='margin-top-sm'>
+        <button class=" bg-red margin-tb-sm" bindtap='submit' data-target="bottomModal">收钱</button>
+    </view>
+    <view class="action">
+        <!-- <button class="cu-btn bg-green shadow" bindtap="showModal" data-target="bottomModal">Bottom</button> -->
+    </view>
+    <view class="cu-modal bottom-modal {{modalName=='bottomModal'?'show':''}}">
+        <view class="cu-dialog">
+          <view class="cu-bar bg-white">
+            <view class="action text-blue" bindtap="hideModal">确定</view>
+          </view>
+          <view class="padding-xl">
+              <view class='margin-top-sm' wx:for="{{show_arr}}" wx:key='{{item}}'>
+                {{item.label === 'dian' ? '点' : item.label === 'wo' ? '我' : item.label === 'wei' ? '维' : item.label === 'xi' ? '曦' : item.label === 'ye' ? '叶' : item.label === 'qi' ? '琪' :  item.label === 'tu' ? '图' : item.label === 'sha' ?  '傻' : ''}} : {{item.value}}                
+              </view>
+          </view>
+        </view>
+      </view>
+
+  </view>
+</view>

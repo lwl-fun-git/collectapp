@@ -1,0 +1,6 @@
+<cu-custom bgColor="bg-gradual-green" isBack="{{true}}">
+  <view slot="backText">返回</view>
+</cu-custom>
+<view class='chat_img'>
+  <image src='../../assets/chat.png' bindtap='previewImage' show-menu-by-longpress='true'></image>
+</view>

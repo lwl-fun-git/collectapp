@@ -1,0 +1,21 @@
+<cu-custom bgColor="bg-gradual-blue">
+  <view slot="content">平台组收钱小程序</view>
+</cu-custom>
+<view class="margin-xl padding-xl bg-white radius shadow shadow-lg">
+  <view class="flex justify-center">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class='cu-btn round bg-green shadow'> 获取你的信息 </button>
+    <block wx:else>
+      <view class='text-center'>
+        <view class="cu-avatar xl round solids" style="background-image:url({{userInfo.avatarUrl}})"></view>
+        <view class="padding">Hi  !  {{userInfo.gender === 0 ? '人妖？？？' : userInfo.gender === 1 ? '大帅比' : userInfo.gender === 2 ? '大美女' : ''}}</view>
+        <view class="cu-item arrow">
+          <navigator class="content" url="/pages/about/home/home" hover-class="none">
+            <text class="text-grey">进入</text>
+          </navigator>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+<view class="text-center margin-top">
+</view>

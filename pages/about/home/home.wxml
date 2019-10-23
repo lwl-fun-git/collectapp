@@ -1,0 +1,39 @@
+<scroll-view scroll-y class="scrollPage">
+  <view class="UCenter-bg">
+    <view class="cu-avatar xl round solids" style="background-image:url({{userInfo.avatarUrl}})"></view>
+    <view class="text-xl" style="margin-top:20rpx;">{{userInfo.nickName}}
+      <text class="text-df">你好</text>
+    </view>
+    <view class="margin-top-sm">
+      <text></text>
+    </view>
+    <image src="https://raw.githubusercontent.com/weilanwl/ColorUI/master/demo/images/wave.gif" mode="scaleToFill" class="gif-wave"></image>
+  </view>
+  <view class="padding flex text-center text-grey bg-white shadow-warp">
+    <view class="flex flex-sub flex-direction solid-right">
+      <view class="text-xxl text-blue">8</view>
+      <view class="margin-top-sm">
+        <text class="cuIcon-favorfill"></text> 人数</view>
+    </view>
+  </view>
+  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/about/about/about" hover-class="none">
+        <!-- <image src="/images/logo.png" class="png" mode="aspectFit"></image> -->
+        <text class="text-grey">进入收钱应用</text>
+      </navigator>
+    </view>
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/about/log/log" hover-class="none">
+        <!-- <text class="cuIcon-formfill text-green"></text> -->
+        <text class="text-grey">记录</text>
+      </navigator>
+    </view>
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/chat/chat" hover-class="none">
+        <text class="text-grey">改进建议</text>
+      </navigator>
+    </view>
+  </view>
+  <view class="cu-tabbar-height"></view>
+</scroll-view>
